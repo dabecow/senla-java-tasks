@@ -1,7 +1,10 @@
 package com.senla.task.first;
 
-public class OddOrEven {
+public class NumberAnalyzer {
     public static boolean isComposite(int num) {
+
+        if (num < 0)
+            num = -num;
 
         int k = 2;
         while (k * k <= num && num % k != 0)
