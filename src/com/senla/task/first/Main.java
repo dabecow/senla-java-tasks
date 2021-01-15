@@ -20,8 +20,8 @@ public class Main {
             return;
         }
 
-        if (number == 0)
-            System.out.println("The number is zero - it's neither a composite nor a prime one");
+        if (number <= 0)
+            System.out.println("The number is zero or less - it's neither a composite nor a prime one");
         else if (NumberAnalyzer.isComposite(number))
             System.out.println("The number is composite");
         else System.out.println("The number is prime");
